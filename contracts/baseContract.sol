@@ -77,4 +77,8 @@ contract baseContract {
       updateStruct memory update = updateStruct(_address, name, category, now, _update);
       updates.push(update);
   }
+
+  function getUpdate() external view returns(updateStruct[] memory){
+    
+  }
 }
